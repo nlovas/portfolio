@@ -4,10 +4,34 @@
     <title>{% block title %}Nicole Lovas{% endblock %}</title>
 	</head>
     <meta charset="utf-8" />
+	{% load static %}
+	{% block extra_head %}
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css"/>
+	{% endblock %}
 	<body>
-	{%block header_words %}Nicole Lovas {% endblock %}
-	<a href = "/home">Home</a> | <a href = "/art">Art</a> | <a href = "/programming">Programming</a> | <a href = "/contact">Contact</a>
-
-	{%block body_block %}Hello and welcome {% endblock %}
+	<div class = "container">
+		<div class = "page-header jumbotron row">
+		<h1>
+		{%block header_words %}Nicole Lovas {% endblock %}
+		</h1>
+		</div>
+	</div>
+	
+	<div class = "container">
+	<div class = "row">
+	<div class = "btn-group btn-group-lg" role = "group">
+	<a class = "btn btn-default" href = "/home">Home</a><a class = "btn btn-default" href = "/art">Art</a><a class = "btn btn-default" href = "/programming">Programming</a><a class = "btn btn-default" href = "/contact">Contact</a>
+	</div>
+	</div>
+	</div>
+	
+	<div class = "container">
+	<div class = "row border-top-0">
+	{%block body_block %}
+	Hello and welcome 
+	{% endblock %}
+	</div>
+	</div>
+	
 	</body>
 </html>
