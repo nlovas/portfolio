@@ -3,6 +3,7 @@
 	border-width: 2px;
 	border-style: solid;
 	border-color: black;
+	padding: 3em;
 }
 
 .abs {
@@ -29,4 +30,8 @@ padding: 2rem 3rem;
   margin-top: 2rem;
   background-color: #eceeef;
   border-radius: 0.3rem;
+}
+
+.marg{
+	margin-top: 3em;
 }

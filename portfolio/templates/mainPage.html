@@ -1,8 +1,13 @@
 {% extends 'base.html' %}
 {%block body_block %}
-<div class ="col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-<div class = "col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div class = "row">
+<div class ="offset-lg-2 offset-md-2 offset-sm-2 col-lg-4 col-md-5 col-sm-12 col-xs-12">
+{% load static %}
+<img src="{% static 'images/faceresized.jpg' %}" alt="Photo of Nicole"/>
+</div>
+<div class = "col-lg-6 col-md-5 col-sm-12 col-xs-12 marg">
 Hello and welcome to my portfolio. My name is Nicole Lovas. I graduated from the University of Alberta in 2017 with both a degree in Computing Science and a certificate in Computer Game Development.
 </div>
 
+</div> <!-- end row -->
 {% endblock %}
