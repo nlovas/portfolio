@@ -2,4 +2,14 @@
 {% block title %}Programming Projects{% endblock %}
 {%block body_block %}
 My programming projects
+
+{%for project in programmingprojects%}
+	<br/>{{project.title}}
+{% endfor %}
+
+{%for image in images%}
+	<br/>{{image.image}}
+{% endfor %}
+
+
 {% endblock %}

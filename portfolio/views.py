@@ -3,6 +3,8 @@ from __future__ import unicode_literals
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.core.urlresolvers import reverse
+from .models import ProgrammingProject, ProgrammingImage
+
 
 #homepage
 def home(request):
@@ -18,7 +20,9 @@ def art(request):
 	
 #programming projects page
 def programming(request):
-	return render(request,'programmingprojects.html')
+	projects = ProgrammingProject.objects.all()
+	images = ProgrammingImage.objects.all()
+	return render(request,'programmingprojects.html',{'programmingprojects' : projects,'images':images})
 	
 #contact page
 def contact(request):

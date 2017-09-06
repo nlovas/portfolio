@@ -1,0 +1,22 @@
+[
+  {
+    "model": "portfolio.ProgrammingProject",
+    "pk": 0,
+    "fields": {
+    "title": "ShareMyChart",
+	"workDate": "2016-08-01",
+	"languages": "testinggg languages go here",
+	"requirements": "requirements go here",
+	"sourceCode" : "put the sourcecode hereeee",
+	"desc" : "description goes here"
+    }
+  },
+  {
+  "model": "portfolio.ProgrammingImage",
+    "pk": 0,
+    "fields": {
+	"project" : 0,
+	"image" : "smc1.png"
+	}
+  }
+]
