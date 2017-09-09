@@ -4,11 +4,11 @@
     "pk": 0,
     "fields": {
     "title": "ShareMyChart",
-	"workDate": "2016-08-01",
-	"languages": "testinggg languages go here",
-	"requirements": "requirements go here",
-	"sourceCode" : "put the sourcecode hereeee",
-	"desc" : "description goes here"
+	"workDate": "2016-09-01",
+	"languages": "HTML, CSS, Javascript(D3 and JQuery), SPARQL, Java",
+	"myParts": "-Using D3 to generate the graphs -Collaborating with the back end team to ensure data of each category appeared and behaved correctly -Researching licenses for the client to choose from",
+	"sourceCode" : "https://github.com/shadownater/ShareMyChart",
+	"desc" : "ShareMyChart is a single page web application created with a team in CMPUT 401 for a client. This application takes Turtle file data from the user and generates graphs. The user can choose X and Y variables in order to generate bar, line, and scatter graphs. A filter can also be applied to the data. <a href = 'http://162.246.157.223/ShareMyChart_war/main.html'>View ShareMyChart</a>"
     }
   },
   {
@@ -17,6 +17,174 @@
     "fields": {
 	"project" : 0,
 	"image" : "smc1.png"
+	}
+  },
+    {
+  "model": "portfolio.ProgrammingImage",
+    "pk": 1,
+    "fields": {
+	"project" : 0,
+	"image" : "smc2.png"
+	}
+  },
+    {
+  "model": "portfolio.ProgrammingImage",
+    "pk": 2,
+    "fields": {
+	"project" : 0,
+	"image" : "smc3.png"
+	}
+  },
+    {
+  "model": "portfolio.ProgrammingImage",
+    "pk": 3,
+    "fields": {
+	"project" : 0,
+	"image" : "smc4.png"
+	}
+  },
+    {
+    "model": "portfolio.ProgrammingProject",
+    "pk": 1,
+    "fields": {
+    "title": "Bookwrm",
+	"workDate": "2015-09-01",
+	"languages": "Java using AndroidStudio, ElasticSearch",
+	"myParts": "-Account creation, log in, item editing, and friend request functionality -Instructed other team members on how to use ElasticSearch -Collaborated with the team to complete testing and UML diagram",
+	"sourceCode" : "https://github.com/CMPUT301F15T06/GraceHoppers",
+	"desc" : "Bookwrm is an Android application created with a team in CMPUT 301. This application allows users to trade books with other users. It has <a href='https://youtu.be/3KRZisnKt_I'>many features</a> including sending friend requests, photographing books, search, and viewable trade histories."
+    }
+  },
+   {
+    "model": "portfolio.ProgrammingProject",
+    "pk": 2,
+    "fields": {
+    "title": "The Buzz",
+	"workDate": "2016-01-01",
+	"languages": "Python, Javascript(Jquery - AJAX), HTML, CSS",
+	"myParts": "-Implemented the user model, user registration, and log in -Communication with Github's API to create posts of the currently logged in user's Github activity -Implemented AJAX commenting features",
+	"sourceCode" : "https://github.com/CMPUT404WIN17BUMBLEBEE/CMPUT404-project-socialdistribution",
+	"desc" : "The Buzz is a distributed social networking website created with a team in CMPUT 404. It uses the Django framework and allows users to make friends, follow, and comment on posts posted both on a user's own server or on a different team's server. The Buzz uses RESTful programming and also communicates with Github's API to retrieve Github activity of the user."
+    }
+  },
+     {
+    "model": "portfolio.ProgrammingProject",
+    "pk": 3,
+    "fields": {
+    "title": "Photosynthesis",
+	"workDate": "2016-01-01",
+	"languages": "Java, JSP, JDBC, HTML, CSS",
+	"myParts": "-Programmed account creation, log in, and search functionality -Designed the look of the website",
+	"sourceCode" : "https://github.com/CMPUT391Winter2016/proj1",
+	"desc" : "PhotoSynthesis is a web application created with a team in CMPUT 391. PhotoSynthesis hosts images for its users similarly to Flickr or Photobucket. Users can upload photos, join groups, and search images. Admins can generate statistics on the users of PhotoSynthesis."
+    }
+  },
+       {
+    "model": "portfolio.ProgrammingProject",
+    "pk": 4,
+    "fields": {
+    "title": "The Wolf",
+	"workDate": "2017-07-28",
+	"languages": "Gamemaker language",
+	"myParts": "-Created artwork for the game including the menu screen, several inventory items, furniture, and collaborated on the artwork for the wolf -Programmed the inventory system, pop-up descriptions, and credits -Collaborated on sound effect implementation, including sound editing",
+	"sourceCode" : "https://github.com/WaffleGames/theWolf",
+	"desc" : "Ludem Dare challenges teams to create a game in just 72 hours. We were a team of two using Gamemaker for the first time. We created a point-and-click horror game where the player must escape the wolf before he comes to get you. All art and programming was created by the two of us. We did not finish in time for the end of Ludem Dare, but we continued to work on the game after the challenge was over in order to finish it. A video walkthrough can be found here (https://youtu.be/D0mZvdfKTBo)"
+    }
+  },
+  {
+  "model": "portfolio.ProgrammingImage",
+    "pk": 4,
+    "fields": {
+	"project" : 1,
+	"image" : "bookwrm.png"
+	}
+  },
+  {
+    "model": "portfolio.ProgrammingImage",
+    "pk": 5,
+    "fields": {
+	"project" : 1,
+	"image" : "bookwrm1.png"
+	}
+  },
+  {
+    "model": "portfolio.ProgrammingImage",
+    "pk": 6,
+    "fields": {
+	"project" : 2,
+	"image" : "thebuzz1.png"
+	}
+  },
+  {
+    "model": "portfolio.ProgrammingImage",
+    "pk": 7,
+    "fields": {
+	"project" : 2,
+	"image" : "thebuzz2.png"
+	}
+  },
+  {
+    "model": "portfolio.ProgrammingImage",
+    "pk": 8,
+    "fields": {
+	"project" : 2,
+	"image" : "thebuzz3.png"
+	}
+  },
+  {
+    "model": "portfolio.ProgrammingImage",
+    "pk": 9,
+    "fields": {
+	"project" : 2,
+	"image" : "thebuzz4.png"
+	}
+  },
+  {
+    "model": "portfolio.ProgrammingImage",
+    "pk": 10,
+    "fields": {
+	"project" : 2,
+	"image" : "thebuzz5.png"
+	}
+  },
+  {
+    "model": "portfolio.ProgrammingImage",
+    "pk": 11,
+    "fields": {
+	"project" : 2,
+	"image" : "thebuzz6.png"
+	}
+  },
+  {
+    "model": "portfolio.ProgrammingImage",
+    "pk": 12,
+    "fields": {
+	"project" : 4,
+	"image" : "thewolf1.png"
+	}
+  },
+   {
+    "model": "portfolio.ProgrammingImage",
+    "pk": 13,
+    "fields": {
+	"project" : 4,
+	"image" : "thewolf2.png"
+	}
+  },
+   {
+    "model": "portfolio.ProgrammingImage",
+    "pk": 14,
+    "fields": {
+	"project" : 4,
+	"image" : "thewolf3.png"
+	}
+  },
+  {
+    "model": "portfolio.ProgrammingImage",
+    "pk": 15,
+    "fields": {
+	"project" : 3,
+	"image" : "photosynthesis.png"
 	}
   }
 ]

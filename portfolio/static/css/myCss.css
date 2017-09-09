@@ -1,3 +1,19 @@
+body{
+		background-color: #8eafe5;
+}
+
+.foreground{
+	background-color: #cee0ff;
+}
+
+.foreground-btn{
+	background-color: #cee0ff;
+}
+
+.foreground-btn:hover{
+	background-color: #afbdd6;
+}
+
 .brdr{
 	border: 1px;
 	border-width: 2px;

@@ -1,15 +1,22 @@
 {% extends 'base.html' %}
 {% block title %}Programming Projects{% endblock %}
 {%block body_block %}
-My programming projects
 
 {%for project in programmingprojects%}
-	<br/>{{project.title}}
+	<br/><h1>{{project.title}}</h1>
+	<br/>{{project.workDate.year}}
+	<br/>{{project.languages}}
+	<br/>{{project.myParts}}
+	<br/>{{project.sourceCode}}
+	<br/>{{project.desc}}
+	{%for image in images%}
+		{% if image.project == project %}
+		<br/>{{image.image}}
+		{% endif %}
+	{% endfor %}
 {% endfor %}
 
-{%for image in images%}
-	<br/>{{image.image}}
-{% endfor %}
+
 
 
 {% endblock %}

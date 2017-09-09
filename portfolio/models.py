@@ -12,7 +12,7 @@ class ProgrammingProject(models.Model):
 	title = models.CharField(max_length=50)
 	workDate = models.DateField()
 	languages = models.CharField(max_length=500)
-	requirements = models.CharField(max_length=1000)
+	myParts = models.CharField(max_length=2000)
 	sourceCode = models.CharField(max_length=100)
 	desc = models.CharField(max_length=1000)
 	
