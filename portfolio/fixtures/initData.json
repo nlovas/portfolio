@@ -111,8 +111,8 @@
     "model": "portfolio.ProgrammingImage",
     "pk": 6,
     "fields": {
-	"project" : 2,
-	"image" : "thebuzz1.png"
+	"project" : 1,
+	"image" : "bookwrm2.png"
 	}
   },
   {
@@ -120,7 +120,7 @@
     "pk": 7,
     "fields": {
 	"project" : 2,
-	"image" : "thebuzz2.png"
+	"image" : "thebuzz1.png"
 	}
   },
   {
@@ -128,7 +128,7 @@
     "pk": 8,
     "fields": {
 	"project" : 2,
-	"image" : "thebuzz3.png"
+	"image" : "thebuzz2.png"
 	}
   },
   {
@@ -136,7 +136,7 @@
     "pk": 9,
     "fields": {
 	"project" : 2,
-	"image" : "thebuzz4.png"
+	"image" : "thebuzz3.png"
 	}
   },
   {
@@ -144,7 +144,7 @@
     "pk": 10,
     "fields": {
 	"project" : 2,
-	"image" : "thebuzz5.png"
+	"image" : "thebuzz4.png"
 	}
   },
   {
@@ -152,12 +152,20 @@
     "pk": 11,
     "fields": {
 	"project" : 2,
-	"image" : "thebuzz6.png"
+	"image" : "thebuzz5.png"
 	}
   },
   {
     "model": "portfolio.ProgrammingImage",
     "pk": 12,
+    "fields": {
+	"project" : 2,
+	"image" : "thebuzz6.png"
+	}
+  },
+  {
+    "model": "portfolio.ProgrammingImage",
+    "pk": 13,
     "fields": {
 	"project" : 4,
 	"image" : "thewolf1.png"
@@ -165,7 +173,7 @@
   },
    {
     "model": "portfolio.ProgrammingImage",
-    "pk": 13,
+    "pk": 14,
     "fields": {
 	"project" : 4,
 	"image" : "thewolf2.png"
@@ -173,7 +181,7 @@
   },
    {
     "model": "portfolio.ProgrammingImage",
-    "pk": 14,
+    "pk": 15,
     "fields": {
 	"project" : 4,
 	"image" : "thewolf3.png"
@@ -181,7 +189,7 @@
   },
   {
     "model": "portfolio.ProgrammingImage",
-    "pk": 15,
+    "pk": 16,
     "fields": {
 	"project" : 3,
 	"image" : "photosynthesis.png"

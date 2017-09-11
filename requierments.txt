@@ -1,2 +1,5 @@
 django==1.11.4
 Pillow==4.2.1
+djangorestframework==3.6.4
+markdown==2.6.9
+django-filter==1.0.4

@@ -36,6 +36,10 @@ body{
 	font-size: 5em;
 }
 
+.medium-font{
+	font-size: 1.5em;
+}
+
 .sit-bottom{
 	margin-top: 2rem;
 }
