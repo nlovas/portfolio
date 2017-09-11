@@ -3,21 +3,37 @@
 
 
 {%block body_block %}
-<!-- give data to javascript to format better-->
-<script type="text/javascript">
-    programming = JSON.parse({{ programmingprojects|safe }});
-	alert(programming[0]);
-    //format(programming);
-</script>
+
 
 {% load static %}
 {% block static_imports %}
   <!--<script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script> -->
   <script type="text/javascript" src="{% static 'js/programming.js' %}"></script>
 {% endblock %}
+<!-- give data to javascript to format better-->
+<script type="text/javascript">
+var programming = [];
+var tmp;
+{%for project in programmingprojects%}
+    //programming = JSON.parse({{ programmingprojects|safe }});
+	//var programming = {{programmingprojects|safe }};
 
-
-
+  tmp = {
+            'title': "{{project.title|safe}}",
+			'workDate': "{{project.workDate|safe}}",
+			'languages': "{{project.languages|safe}}",
+			'myParts': "{{project.myParts|safe}}",
+			'sourceCode': "{{project.sourceCode|safe}}",
+			'desc': "{{project.desc|safe}}"
+  }
+  programming.push(tmp);
+{% endfor %}
+    format(programming);
+</script>
+{%for project in programmingprojects%}
+{{project.title}}
+{% endfor %}
+<!--
 {%for project in programmingprojects%}
 	<br/><h2>{{project.title}}</h2>
 	<br/>{{project.workDate.year}}
@@ -30,8 +46,8 @@
 		{% load static %}
 		<br/><img src ="../static/images{{image.image.url}}" alt="Screenshot of {{image.project.title}}"/>
 		{% endif %}
-	{% endfor %}
-{% endfor %}
+	{% endfor %} 
+{% endfor %} -->
 
 
 

@@ -10,7 +10,7 @@ from django.db import models
 # title, approx date worked on, language(s), goals & reqs, screenshots, github location, parts I did/learned
 class ProgrammingProject(models.Model):
 	title = models.CharField(max_length=50)
-	workDate = models.DateField()
+	workDate = models.CharField(max_length=50)
 	languages = models.CharField(max_length=500)
 	myParts = models.CharField(max_length=2000)
 	sourceCode = models.CharField(max_length=100)
@@ -26,7 +26,7 @@ class ProgrammingImage(models.Model):
 #title, approx date, set of images(1 or more), goals & reqs, desc
 class ArtProject(models.Model):
 	title = models.CharField(max_length=50)
-	workDate = models.DateField()
+	workDate = models.CharField(max_length=50)
 	requirements = models.CharField(max_length=1000)
 	desc = models.CharField(max_length=1000)
 

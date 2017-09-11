@@ -4,7 +4,7 @@
     "pk": 0,
     "fields": {
     "title": "ShareMyChart",
-	"workDate": "2016-09-01",
+	"workDate": "Fall Semester 2016",
 	"languages": "HTML, CSS, Javascript(D3 and JQuery), SPARQL, Java",
 	"myParts": "-Using D3 to generate the graphs -Collaborating with the back end team to ensure data of each category appeared and behaved correctly -Researching licenses for the client to choose from",
 	"sourceCode" : "https://github.com/shadownater/ShareMyChart",
@@ -48,7 +48,7 @@
     "pk": 1,
     "fields": {
     "title": "Bookwrm",
-	"workDate": "2015-09-01",
+	"workDate": "Fall Semester 2015",
 	"languages": "Java using AndroidStudio, ElasticSearch",
 	"myParts": "-Account creation, log in, item editing, and friend request functionality -Instructed other team members on how to use ElasticSearch -Collaborated with the team to complete testing and UML diagram",
 	"sourceCode" : "https://github.com/CMPUT301F15T06/GraceHoppers",
@@ -60,7 +60,7 @@
     "pk": 2,
     "fields": {
     "title": "The Buzz",
-	"workDate": "2016-01-01",
+	"workDate": "Winter Semester 2017",
 	"languages": "Python, Javascript(Jquery - AJAX), HTML, CSS",
 	"myParts": "-Implemented the user model, user registration, and log in -Communication with Github's API to create posts of the currently logged in user's Github activity -Implemented AJAX commenting features",
 	"sourceCode" : "https://github.com/CMPUT404WIN17BUMBLEBEE/CMPUT404-project-socialdistribution",
@@ -72,7 +72,7 @@
     "pk": 3,
     "fields": {
     "title": "Photosynthesis",
-	"workDate": "2016-01-01",
+	"workDate": "Winter Semester 2016",
 	"languages": "Java, JSP, JDBC, HTML, CSS",
 	"myParts": "-Programmed account creation, log in, and search functionality -Designed the look of the website",
 	"sourceCode" : "https://github.com/CMPUT391Winter2016/proj1",
@@ -84,7 +84,7 @@
     "pk": 4,
     "fields": {
     "title": "The Wolf",
-	"workDate": "2017-07-28",
+	"workDate": "July-August 2017",
 	"languages": "Gamemaker language",
 	"myParts": "-Created artwork for the game including the menu screen, several inventory items, furniture, and collaborated on the artwork for the wolf -Programmed the inventory system, pop-up descriptions, and credits -Collaborated on sound effect implementation, including sound editing",
 	"sourceCode" : "https://github.com/WaffleGames/theWolf",

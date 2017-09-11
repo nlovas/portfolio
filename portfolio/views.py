@@ -7,9 +7,10 @@ from .models import ProgrammingProject, ProgrammingImage
 from portfolio.serializers import PProjectSerializer
 from rest_framework.renderers import JSONRenderer
 #from rest_framework.parsers import JSONParser
-from django.http import JsonResponse
+#from django.http import JsonResponse
 import json
-
+from django.core import serializers
+from django.forms.models import model_to_dict
 
 #homepage
 def home(request):
@@ -35,20 +36,32 @@ def programming(request):
 		images[img.project.pk].append(img.image.url)
 	
 	#then do the projects
+	projects = []
 	#projects = [[]for i in range(len(allProjects))]
-	#for proj in allProjects:
+	for proj in allProjects:
 	#	projects[proj.pk].append(serializers.serialize('json',list(proj)))
+		p = {
+			'title': proj.title,
+			'workDate':proj.workDate,
+			'languages':proj.languages,
+			'myParts':proj.myParts,
+			'sourceCode':proj.sourceCode,
+			'desc': proj.desc
+		}
+		#p = model_to_dict(proj)
+		projects.append(p)
+	#print projects
+	#serialized = PProjectSerializer(allProjects, many=True)
+	#projects = JSONRenderer().render(serialized.data)
 	
-	serialized = PProjectSerializer(allProjects, many=True)
-	projects = JSONRenderer().render(serialized.data)
 	
-	#data = {projects,images}
 	
-	#projects = serializers.serialize('json', list(allProjects))
-	#projects = json.dumps(list(allProjects), cls=DjangoJSONEncoder) 
-	return render(request,'programmingprojects.html',{'programmingprojects' : json.dumps(projects),'images': images})
-	#return JsonResponse({'projects': projects,'images': images},status=200)
-	#return HttpResponse(data, content_type='application/json')
+	#projects = serializers.serialize('json', allProjects)###########
+	#projects = JSONRenderer().render(serialized)
+	
+	
+	
+	return render(request,'programmingprojects.html',{'programmingprojects' : projects,'images': images})
 	
 #contact page
 def contact(request):
