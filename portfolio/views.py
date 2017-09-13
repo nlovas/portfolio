@@ -31,16 +31,25 @@ def programming(request):
 	allImgs = ProgrammingImage.objects.all()
 	allProjects = ProgrammingProject.objects.all()
 	
-	images = [[]for i in range(len(allProjects))]
+	#images = [[]for i in range(len(allProjects))]
+	#for img in allImgs:
+	#	images[img.project.pk].append(img.image.url)
+
+	images = []
 	for img in allImgs:
-		images[img.project.pk].append(img.image.url)
-	
+		i = {
+			'fk':img.project.pk,
+			'imageurl':img.image.url
+		}
+		images.append(i)
+
 	#then do the projects
 	projects = []
 	#projects = [[]for i in range(len(allProjects))]
 	for proj in allProjects:
 	#	projects[proj.pk].append(serializers.serialize('json',list(proj)))
 		p = {
+			'pk':proj.pk,
 			'title': proj.title,
 			'workDate':proj.workDate,
 			'languages':proj.languages,

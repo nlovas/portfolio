@@ -6,7 +6,7 @@
     "title": "ShareMyChart",
 	"workDate": "Fall Semester 2016",
 	"languages": "HTML, CSS, Javascript(D3 and JQuery), SPARQL, Java",
-	"myParts": "-Using D3 to generate the graphs -Collaborating with the back end team to ensure data of each category appeared and behaved correctly -Researching licenses for the client to choose from",
+	"myParts": "<ul><li>Using D3 to generate the graphs</li> <li>Collaborating with the back end team to ensure data of each category appeared and behaved correctly</li> <li>Researching licenses for the client to choose from</li></ul>",
 	"sourceCode" : "https://github.com/shadownater/ShareMyChart",
 	"desc" : "ShareMyChart is a single page web application created with a team in CMPUT 401 for a client. This application takes Turtle file data from the user and generates graphs. The user can choose X and Y variables in order to generate bar, line, and scatter graphs. A filter can also be applied to the data. <a href = 'http://162.246.157.223/ShareMyChart_war/main.html'>View ShareMyChart</a>"
     }
@@ -50,7 +50,7 @@
     "title": "Bookwrm",
 	"workDate": "Fall Semester 2015",
 	"languages": "Java using AndroidStudio, ElasticSearch",
-	"myParts": "-Account creation, log in, item editing, and friend request functionality -Instructed other team members on how to use ElasticSearch -Collaborated with the team to complete testing and UML diagram",
+	"myParts": "<ul><li>Account creation, log in, item editing, and friend request functionality</li> <li>Instructed other team members on how to use ElasticSearch</li> <li>Collaborated with the team to complete testing and UML diagram</li></ul>",
 	"sourceCode" : "https://github.com/CMPUT301F15T06/GraceHoppers",
 	"desc" : "Bookwrm is an Android application created with a team in CMPUT 301. This application allows users to trade books with other users. It has <a href='https://youtu.be/3KRZisnKt_I'>many features</a> including sending friend requests, photographing books, search, and viewable trade histories."
     }
@@ -62,7 +62,7 @@
     "title": "The Buzz",
 	"workDate": "Winter Semester 2017",
 	"languages": "Python, Javascript(Jquery - AJAX), HTML, CSS",
-	"myParts": "-Implemented the user model, user registration, and log in -Communication with Github's API to create posts of the currently logged in user's Github activity -Implemented AJAX commenting features",
+	"myParts": "<ul><li>Implemented the user model, user registration, and log in</li> <li>Communication with Github's API to create posts of the currently logged in user's Github activity</li> <li>Implemented AJAX commenting features</li></ul>",
 	"sourceCode" : "https://github.com/CMPUT404WIN17BUMBLEBEE/CMPUT404-project-socialdistribution",
 	"desc" : "The Buzz is a distributed social networking website created with a team in CMPUT 404. It uses the Django framework and allows users to make friends, follow, and comment on posts posted both on a user's own server or on a different team's server. The Buzz uses RESTful programming and also communicates with Github's API to retrieve Github activity of the user."
     }
@@ -74,7 +74,7 @@
     "title": "Photosynthesis",
 	"workDate": "Winter Semester 2016",
 	"languages": "Java, JSP, JDBC, HTML, CSS",
-	"myParts": "-Programmed account creation, log in, and search functionality -Designed the look of the website",
+	"myParts": "<ul><li>Programmed account creation, log in, and search functionality</li> <li>Designed the look of the website</li></ul>",
 	"sourceCode" : "https://github.com/CMPUT391Winter2016/proj1",
 	"desc" : "PhotoSynthesis is a web application created with a team in CMPUT 391. PhotoSynthesis hosts images for its users similarly to Flickr or Photobucket. Users can upload photos, join groups, and search images. Admins can generate statistics on the users of PhotoSynthesis."
     }
@@ -86,7 +86,7 @@
     "title": "The Wolf",
 	"workDate": "July-August 2017",
 	"languages": "Gamemaker language",
-	"myParts": "-Created artwork for the game including the menu screen, several inventory items, furniture, and collaborated on the artwork for the wolf -Programmed the inventory system, pop-up descriptions, and credits -Collaborated on sound effect implementation, including sound editing",
+	"myParts": "<ul><li>Created artwork for the game including the menu screen, several inventory items, furniture, and collaborated on the artwork for the wolf</li> <li>Programmed the inventory system, pop-up descriptions, and credits</li> <li>Collaborated on sound effect implementation, including sound editing</li></ul>",
 	"sourceCode" : "https://github.com/WaffleGames/theWolf",
 	"desc" : "Ludem Dare challenges teams to create a game in just 72 hours. We were a team of two using Gamemaker for the first time. We created a point-and-click horror game where the player must escape the wolf before he comes to get you. All art and programming was created by the two of us. We did not finish in time for the end of Ludem Dare, but we continued to work on the game after the challenge was over in order to finish it. A video walkthrough can be found here (https://youtu.be/D0mZvdfKTBo)"
     }

@@ -7,18 +7,35 @@
 
 {% load static %}
 {% block static_imports %}
-  <!--<script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script> -->
+  <script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/programming.js' %}"></script>
 {% endblock %}
-<!-- give data to javascript to format better-->
+
 <script type="text/javascript">
 var programming = [];
 var tmp;
-{%for project in programmingprojects%}
-    //programming = JSON.parse({{ programmingprojects|safe }});
-	//var programming = {{programmingprojects|safe }};
+</script>
 
-  tmp = {
+{%for project in programmingprojects%}
+<div class = "PP{{project.pk|safe}}">
+	<br/><h2 class ="titleofPP{{project.pk|safe}}">{{project.title}}</h2>
+	<div class = "workDateofPP{{project.pk|safe}}">{{project.workDate}}</div>
+<div class="languagesofPP{{project.pk|safe}}">{{project.languages}}</div>
+	<div class="sourcecodeofPP{{project.pk|safe}}"><a href = "{{project.sourceCode}}">Source Code</a></div>
+    <br/>
+    <div class="imagesofPP{{project.pk|safe}}">
+	{%for image in images%}
+      {% if image.fk == project.pk%}
+		{% load static %}
+
+		<img src ="../static/images{{image.imageurl}}" alt="Screenshot of {{project.title}}" class="imgSize"/>
+      {% endif %}
+	{% endfor %}
+    </div>
+  </div>
+<!-- give data to javascript to format better-->
+<script type="text/javascript">
+ tmp = {
             'title': "{{project.title|safe}}",
 			'workDate': "{{project.workDate|safe}}",
 			'languages': "{{project.languages|safe}}",
@@ -27,27 +44,17 @@ var tmp;
 			'desc': "{{project.desc|safe}}"
   }
   programming.push(tmp);
-{% endfor %}
-    format(programming);
+  if(programming.length == {{programmingprojects|length}}){
+   $(document).ready(format(programming));
+  }
+
+   //$(document).ready(format(programming));
+   //$(window).on('load', format(programming));
 </script>
-{%for project in programmingprojects%}
-{{project.title}}
+
+
 {% endfor %}
-<!--
-{%for project in programmingprojects%}
-	<br/><h2>{{project.title}}</h2>
-	<br/>{{project.workDate.year}}
-	<br/>{{project.languages}}
-	<br/>{{project.myParts}}
-	<br/><a href = "{{project.sourceCode}}">Source Code</a>
-	<br/>{{project.desc}}
-	{%for image in images%}
-		{% if image.project == project %}
-		{% load static %}
-		<br/><img src ="../static/images{{image.image.url}}" alt="Screenshot of {{image.project.title}}"/>
-		{% endif %}
-	{% endfor %} 
-{% endfor %} -->
+
 
 
 
