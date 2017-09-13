@@ -14,27 +14,38 @@
 <script type="text/javascript">
 var programming = [];
 var tmp;
+var pImages = [];
+var imageSet = [];
 </script>
 
 {%for project in programmingprojects%}
+
 <div class = "PP{{project.pk|safe}}">
 	<br/><h2 class ="titleofPP{{project.pk|safe}}">{{project.title}}</h2>
 	<div class = "workDateofPP{{project.pk|safe}}">{{project.workDate}}</div>
-<div class="languagesofPP{{project.pk|safe}}">{{project.languages}}</div>
+<div class="languagesofPP{{project.pk|safe}} small">{{project.languages}}</div>
 	<div class="sourcecodeofPP{{project.pk|safe}}"><a href = "{{project.sourceCode}}">Source Code</a></div>
     <br/>
-    <div class="imagesofPP{{project.pk|safe}}">
+    <!--<div class="imagesofPP{{project.pk|safe}}">-->
 	{%for image in images%}
       {% if image.fk == project.pk%}
 		{% load static %}
-
-		<img src ="../static/images{{image.imageurl}}" alt="Screenshot of {{project.title}}" class="imgSize"/>
+    <script type="text/javascript">
+        //put images into a form I can use
+        imageSet.push("{{image.imageurl|safe}}");
+    </script>
+		<!--<img src ="../static/images{{image.imageurl}}" alt="Screenshot of {{project.title}}" class="imgSize"/> -->
       {% endif %}
 	{% endfor %}
-    </div>
+   <!-- </div>-->
   </div>
-<!-- give data to javascript to format better-->
+
 <script type="text/javascript">
+        //append list of images to master list, making a 2D array
+            pImages.push(imageSet);
+            imageSet = [];
+
+        //give data to javascript to format better
  tmp = {
             'title': "{{project.title|safe}}",
 			'workDate': "{{project.workDate|safe}}",
@@ -45,7 +56,7 @@ var tmp;
   }
   programming.push(tmp);
   if(programming.length == {{programmingprojects|length}}){
-   $(document).ready(format(programming));
+   $(document).ready(format(programming,pImages));
   }
 
    //$(document).ready(format(programming));
