@@ -23,8 +23,11 @@ function format(pData,pImages){
         for(p=0;p<pImages[i].length;p++){
             thumbnail = document.createElement("img");
             thumbnail.className = "PP" + i + "image" + p;
+            thumbnail.className = "img-responsive";
+            thumbnail.className = "smol-img";
             $(thumbnail).attr("alt","Screenshot of " + pData[i]["title"]);
             $(thumbnail).attr("src", "../static/images" + pImages[i][p]);
+
             $(".PP" + i).append(thumbnail);
 
         }

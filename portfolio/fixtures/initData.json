@@ -8,7 +8,7 @@
 	"languages": "HTML, CSS, Javascript(D3 and JQuery), SPARQL, Java",
 	"myParts": "<ul><li>Using D3 to generate the graphs</li> <li>Collaborating with the back end team to ensure data of each category appeared and behaved correctly</li> <li>Researching licenses for the client to choose from</li></ul>",
 	"sourceCode" : "https://github.com/shadownater/ShareMyChart",
-	"desc" : "ShareMyChart is a single page web application created with a team in CMPUT 401 for a client. This application takes Turtle file data from the user and generates graphs. The user can choose X and Y variables in order to generate bar, line, and scatter graphs. A filter can also be applied to the data. <a href = 'http://162.246.157.223/ShareMyChart_war/main.html'>View ShareMyChart</a>"
+	"desc" : "ShareMyChart is a single page web application created with a team in CMPUT 401 for a client. This application takes Turtle file data from the user and generates graphs. The user can choose X and Y variables in order to generate bar, line, and scatter graphs. A filter can also be applied to the data. <a href = 'http://162.246.157.223/ShareMyChart_war/main.html'>View ShareMyChart.</a>"
     }
   },
   {
@@ -88,7 +88,7 @@
 	"languages": "Gamemaker language",
 	"myParts": "<ul><li>Created artwork for the game including the menu screen, several inventory items, furniture, and collaborated on the artwork for the wolf</li> <li>Programmed the inventory system, pop-up descriptions, and credits</li> <li>Collaborated on sound effect implementation, including sound editing</li></ul>",
 	"sourceCode" : "https://github.com/WaffleGames/theWolf",
-	"desc" : "Ludem Dare challenges teams to create a game in just 72 hours. We were a team of two using Gamemaker for the first time. We created a point-and-click horror game where the player must escape the wolf before he comes to get you. All art and programming was created by the two of us. We did not finish in time for the end of Ludem Dare, but we continued to work on the game after the challenge was over in order to finish it. A video walkthrough can be found here (https://youtu.be/D0mZvdfKTBo)"
+	"desc" : "Ludem Dare challenges teams to create a game in just 72 hours. We were a team of two using Gamemaker for the first time. We created a point-and-click horror game where the player must escape the wolf before he comes to get you. All art and programming was created by the two of us. We did not finish in time for the end of Ludem Dare, but we continued to work on the game after the challenge was over in order to finish it. <a href ='https://youtu.be/D0mZvdfKTBo'>Watch a video walkthrough.</a>"
     }
   },
   {
