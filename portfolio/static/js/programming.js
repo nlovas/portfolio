@@ -1,10 +1,13 @@
 
 function format(pData,pImages){
 	//makes point form work, inline html, sets up images
+    "use strict";
 	var myPartsDiv;
+	var descDiv;
+	var thumbnail;
 	var tmp;
 	var tmp2;
-    for(i=0;i<pData.length;i++){
+    for(var i=0;i<pData.length;i++){
 
         //for the bullets:
         myPartsDiv = document.createElement("div");
@@ -20,7 +23,7 @@ function format(pData,pImages){
         $(".sourcecodeofPP" + i).after(descDiv);
 
         //for the images
-        for(p=0;p<pImages[i].length;p++){
+        for(var p=0;p<pImages[i].length;p++){
             thumbnail = document.createElement("img");
             thumbnail.className = "PP" + i + "image" + p;
             thumbnail.className = "img-responsive";
